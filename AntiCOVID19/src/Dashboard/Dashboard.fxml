@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BubbleChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="layout" prefHeight="481.0" prefWidth="847.0" style="-fx-background-color: #f0f8ff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dashboard.DashboardController">
+   <children>
+      <MenuBar prefHeight="25.0" prefWidth="874.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Dashboard">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#dashboard" text="Dashboard" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Cek Resiko">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#cekResiko" text="Cek Resiko" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Biodata">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#biodata" text="Biodata" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="About">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#about" text="Action 1" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Logout">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#logout" text="Log Out" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Exit">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#Exit" text="exit" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutY="25.0" prefHeight="28.0" prefWidth="874.0" style="-fx-background-color: #000080;" text="Informasi Seputar COVID-19 Di Indonesia" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="21.0" layoutY="79.0" prefHeight="28.0" prefWidth="149.0" style="-fx-background-color: #800000;" text="TERKONFIRMASI" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label id="terkonfirmasi" fx:id="totalTerkonfirmasi" alignment="CENTER" layoutX="21.0" layoutY="107.0" prefHeight="43.0" prefWidth="65.0" style="-fx-background-color: #262829;" text="Total" textFill="RED">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <Label id="terkonfirmasi" fx:id="rasioTerkonfirmasi" alignment="CENTER" layoutX="86.0" layoutY="107.0" prefHeight="43.0" prefWidth="84.0" style="-fx-background-color: #262829;" text="tambah" textFill="#c4bebe">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <Label id="terkonfirmasi" fx:id="totalSembuh" alignment="CENTER" layoutX="21.0" layoutY="190.0" prefHeight="43.0" prefWidth="65.0" style="-fx-background-color: #262829;" text="Total" textFill="#669933">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="21.0" layoutY="162.0" prefHeight="28.0" prefWidth="149.0" style="-fx-background-color: #669933;" text="SEMBUH" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label id="terkonfirmasi" fx:id="rasioSembuh" alignment="CENTER" layoutX="86.0" layoutY="190.0" prefHeight="43.0" prefWidth="84.0" style="-fx-background-color: #262829;" text="tambah" textFill="#c4bebe">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="21.0" layoutY="244.0" prefHeight="28.0" prefWidth="149.0" style="-fx-background-color: #FFCC00;" text="DIRAWAT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label id="terkonfirmasi" fx:id="totalDirawat" alignment="CENTER" layoutX="21.0" layoutY="272.0" prefHeight="43.0" prefWidth="65.0" style="-fx-background-color: #262829;" text="Total" textFill="#ffcc00">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <Label id="terkonfirmasi" fx:id="rasioDirawat" alignment="CENTER" layoutX="86.0" layoutY="272.0" prefHeight="43.0" prefWidth="84.0" style="-fx-background-color: #262829;" text="tambah" textFill="#c4bebe">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="21.0" layoutY="325.0" prefHeight="28.0" prefWidth="149.0" style="-fx-background-color: #FF6699;" text="MENINGGAL" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label id="terkonfirmasi" fx:id="totalMeninggal" alignment="CENTER" layoutX="21.0" layoutY="353.0" prefHeight="43.0" prefWidth="65.0" style="-fx-background-color: #262829;" text="Total" textFill="#ff6699">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <Label id="terkonfirmasi" fx:id="rasioMeninggal" alignment="CENTER" layoutX="86.0" layoutY="353.0" prefHeight="43.0" prefWidth="84.0" style="-fx-background-color: #262829;" text="tambah" textFill="#c4bebe">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="192.0" layoutY="60.0" prefHeight="28.0" prefWidth="215.0" style="-fx-background-color: #f0f8ff;" text="PERKEMBANGAN COVID-19">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <BubbleChart fx:id="chartBuble" layoutX="170.0" layoutY="78.0" prefHeight="196.0" prefWidth="309.0">
+        <xAxis>
+          <NumberAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BubbleChart>
+      <PieChart fx:id="pieChart" layoutX="501.0" layoutY="93.0" prefHeight="165.0" prefWidth="200.0" />
+      <Label layoutX="595.0" layoutY="247.0" prefHeight="28.0" prefWidth="279.0" style="-fx-background-color: #000080;" text="PENAMBAHAN/UPDATE DATA" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="595.0" layoutY="275.0" prefHeight="135.0" prefWidth="200.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="47.0" prefWidth="100.0" style="-fx-background-color: #FFCC00;" text="Tanggal" textFill="WHITE" />
+            <Label prefHeight="68.0" prefWidth="100.0" style="-fx-background-color: #FFCC00;" text="Terkonfirmasi" textFill="WHITE" GridPane.rowIndex="1" />
+            <Label prefHeight="73.0" prefWidth="100.0" style="-fx-background-color: #FFCC00;" text="Dirawat" textFill="WHITE" GridPane.rowIndex="2" />
+            <Label prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #FFCC00;" text="Sembuh" textFill="WHITE" GridPane.rowIndex="3" />
+            <Label prefHeight="83.0" prefWidth="100.0" style="-fx-background-color: #FFCC00;" text="Meniggal" textFill="WHITE" GridPane.rowIndex="4" />
+            <TextField fx:id="tambahTanggal" GridPane.columnIndex="1" />
+            <TextField fx:id="tambahTerkonfirmasi" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="tambahDirawat" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="tambahSembuh" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="tambahMeninggal" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <Button fx:id="btnTanggal" layoutX="795.0" layoutY="275.0" mnemonicParsing="false" onAction="#btnTanggal" prefHeight="17.0" prefWidth="59.0" text="Tanggal" />
+      <Button layoutX="705.0" layoutY="419.0" mnemonicParsing="false" onAction="#btnReset" prefHeight="17.0" prefWidth="59.0" text="RESET" />
+      <Button layoutX="780.0" layoutY="419.0" mnemonicParsing="false" onAction="#btnSimpan" prefHeight="25.0" prefWidth="74.0" text="SIMPAN" />
+      <TableView fx:id="tabel" layoutX="200.0" layoutY="272.0" prefHeight="127.0" prefWidth="379.0">
+        <columns>
+          <TableColumn fx:id="tbltanggal" prefWidth="75.0" text="TANGGAL" />
+          <TableColumn fx:id="tblTerkonfirmasi" prefWidth="75.0" text="TERKONFIRMASI" />
+            <TableColumn fx:id="tblDirawat" prefWidth="75.0" text="DIRAWAT" />
+            <TableColumn fx:id="tblsembyh" prefWidth="75.0" text="SEMBUH" />
+            <TableColumn fx:id="tblmeninggal" prefWidth="75.0" text="MENINGGAL" />
+        </columns>
+      </TableView>
+      <Button layoutX="241.0" layoutY="406.0" mnemonicParsing="false" onAction="#pindah" text="Ini" />
+   </children>
+</AnchorPane>

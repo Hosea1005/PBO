@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 1, 2020 9:05:24 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="hibernate.Covid" table="COVID" schema="PUBLIC" catalog="COVID" optimistic-lock="version">
+        <id name="idcovid" type="int">
+            <column name="IDCOVID" />
+            <generator class="assigned" />
+        </id>
+        <property name="date" type="string">
+            <column name="DATE" length="50" />
+        </property>
+        <property name="terkonfirmasi" type="java.lang.Integer">
+            <column name="TERKONFIRMASI" />
+        </property>
+        <property name="rawat" type="java.lang.Integer">
+            <column name="RAWAT" />
+        </property>
+        <property name="sembuh" type="java.lang.Integer">
+            <column name="SEMBUH" />
+        </property>
+        <property name="meninggal" type="java.lang.Integer">
+            <column name="MENINGGAL" />
+        </property>
+    </class>
+</hibernate-mapping>

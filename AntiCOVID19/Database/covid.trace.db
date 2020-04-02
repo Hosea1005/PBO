@@ -1,0 +1,77 @@
+2020-03-31 17:32:08 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE USER 
+    IND[*] INT AUTO_INCREMENT PRIMARY KEY,
+    USERNAME VARCHAR(100)
+ "; SQL statement:
+CREATE TABLE user 
+    ind INT AUTO_INCREMENT PRIMARY KEY,
+    username varchar(100)
+  [42000-200]
+2020-03-31 17:34:52 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Unknown data type: ; SQL statement:
+CREATE TABLE Biodata(
+    idbiodata INT AUTO_INCREMENT PRIMARY KEY,
+    nama varchar(30),
+    jeniskelamin(15)
+) [50004-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:5971)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:5697)
+	at org.h2.command.Parser.parseTableColumnDefinition(Parser.java:8442)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8379)
+	at org.h2.command.Parser.parseCreate(Parser.java:6276)
+	at org.h2.command.Parser.parsePrepared(Parser.java:903)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.executeSQLStatementForExtraction(SQLExecutionHelper.java:856)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.access$500(SQLExecutionHelper.java:86)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper$1Loader.run(SQLExecutionHelper.java:149)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1443)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:68)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:303)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2058)
+2020-04-01 20:59:08 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE COVID(
+IDCOVID INT AUTO_INCREMENT PRIMARY KE[*],
+DATE VARCHAR(50),
+TERKONFIRMASI INT,
+RAWAT INT,
+SEMBUH INT,
+MENINGGAL INT
+)"; expected "KEY"; SQL statement:
+CREATE TABLE Covid(
+idcovid INT AUTO_INCREMENT PRIMARY KE,
+date varchar(50),
+terkonfirmasi INT,
+rawat INT,
+sembuh INT,
+meninggal INT
+) [42001-200]
+2020-04-01 20:59:26 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE COVID(
+IDCOVID INT AUTO_INCREMENT PRIMARY KE[*],
+DATE VARCHAR(50),
+TERKONFIRMASI INT,
+RAWAT INT,
+SEMBUH INT,
+MENINGGAL INT
+)"; expected "KEY"; SQL statement:
+CREATE TABLE Covid(
+idcovid INT AUTO_INCREMENT PRIMARY KE,
+date varchar(50),
+terkonfirmasi INT,
+rawat INT,
+sembuh INT,
+meninggal INT
+) [42001-200]

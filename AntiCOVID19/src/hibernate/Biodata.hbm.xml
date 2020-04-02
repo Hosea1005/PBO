@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 1, 2020 9:05:24 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="hibernate.Biodata" table="BIODATA" schema="PUBLIC" catalog="COVID" optimistic-lock="version">
+        <id name="idbiodata" type="int">
+            <column name="IDBIODATA" />
+            <generator class="assigned" />
+        </id>
+        <property name="nama" type="string">
+            <column name="NAMA" length="30" />
+        </property>
+        <property name="jeniskelamin" type="string">
+            <column name="JENISKELAMIN" length="15" />
+        </property>
+    </class>
+</hibernate-mapping>

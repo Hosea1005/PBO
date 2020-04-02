@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="Cekresiko.CekresikoController">
+   <children>
+      <MenuBar layoutY="1.0" prefHeight="25.0" prefWidth="693.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Dashboard">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#dashboard" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Cek Resiko">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#cekResiko" text="Delete" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Biodata">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#biodata" text="About" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="About">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#about" text="Action 1" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Logout">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#logout" text="Action 1" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Exit">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#Exit" text="exit" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <ScrollPane layoutX="-3.0" layoutY="13.0" prefHeight="795.0" prefWidth="699.0" vbarPolicy="ALWAYS" vmax="1.5">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="915.0" prefWidth="699.0">
+               <children>
+                  <GridPane layoutX="-1.0" prefHeight="711.0" prefWidth="686.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="169.33331298828125" minWidth="0.0" prefWidth="32.33334279060364" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="577.9999593098959" minWidth="10.0" prefWidth="546.6666572093964" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="127.33337402343744" minWidth="10.0" prefWidth="49.66670735677087" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="113.66668701171875" minWidth="10.0" prefWidth="55.99995930989587" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="25.333343505859375" minHeight="3.999998092651367" prefHeight="20.333335876464844" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="49.00000254313151" minHeight="0.0" prefHeight="26.33334350585938" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="68.66666666666669" minHeight="7.333332061767578" prefHeight="26.33332824707032" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="59.0" minHeight="0.0" prefHeight="23.99999237060547" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="92.00001780192056" minHeight="10.0" prefHeight="26.333318074544252" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="125.00001525878906" minHeight="0.0" prefHeight="26.666692097981766" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="200.66665649414062" minHeight="0.0" prefHeight="28.66668192545569" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="220.66666158040363" minHeight="0.0" prefHeight="27.666656494140625" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="238.3333435058594" minHeight="10.0" prefHeight="26.000010172526032" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="341.3333435058594" minHeight="10.0" prefHeight="26.666666666666742" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="342.0" minHeight="10.0" prefHeight="28.666656494140568" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="343.3333435058594" minHeight="10.0" prefHeight="30.333333333333314" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="342.99998982747394" minHeight="10.0" prefHeight="27.99994913736981" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="342.99998982747394" minHeight="10.0" prefHeight="30.333333333333314" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="342.99998982747394" minHeight="10.0" prefHeight="27.333333333333314" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="342.99998982747394" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="342.99998982747394" minHeight="10.0" prefHeight="27.99998982747394" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="342.99998982747394" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="342.99998982747394" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="342.99998982747394" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="342.99998982747394" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="342.99998982747394" minHeight="10.0" prefHeight="29.000020345052064" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="342.99998982747394" minHeight="10.0" prefHeight="33.666666666666686" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="342.99998982747394" minHeight="10.0" prefHeight="33.666666666666686" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="342.99998982747394" minHeight="10.0" prefHeight="33.666666666666686" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <RadioButton layoutX="589.0" layoutY="567.0" mnemonicParsing="false" text="YA" />
+                        <Label alignment="CENTER" prefHeight="20.0" prefWidth="32.0" style="-fx-background-color: #696969;" text="#" textFill="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="107.0" prefWidth="547.0" style="-fx-background-color: #696969;" text="KEGIATAN" textFill="WHITE" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="44.0" prefWidth="51.0" style="-fx-background-color: #696969;" text="YA" textFill="WHITE" GridPane.columnIndex="2">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="21.0" prefWidth="99.0" style="-fx-background-color: #696969;" text="TIDAK" textFill="WHITE" GridPane.columnIndex="3">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="57.0" prefWidth="33.0" style="-fx-background-color: #696969;" text="A." textFill="WHITE" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="37.0" prefWidth="595.0" style="-fx-background-color: #696969;" text="POTENSI TERTULAR DI LUAR RUMAH" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="37.0" prefWidth="595.0" style="-fx-background-color: #696969;" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="37.0" prefWidth="595.0" style="-fx-background-color: #696969;" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="58.0" prefWidth="33.0" text="1" GridPane.rowIndex="2" />
+                        <Label prefHeight="27.0" prefWidth="571.0" text="Saya tidak pergi ke luar rumah" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label prefHeight="27.0" prefWidth="571.0" text="Saya menggunakan transportasi umum" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label prefHeight="27.0" prefWidth="571.0" text="2" GridPane.rowIndex="3" />
+                        <Label prefHeight="27.0" prefWidth="571.0" text="Saya tidak memakai masker saat berkumpul dengan orang lain " GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label prefHeight="27.0" prefWidth="571.0" text="Saya berjabat tangan dengan orang lain" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Label prefHeight="27.0" prefWidth="571.0" text="Saya tidak membersihkan tangan dengan hansanitizer sebelum berkendara" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                        <Label prefHeight="27.0" prefWidth="571.0" text="Saya menyentuh benda yang di sentuh orang lain" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                        <Label prefHeight="27.0" prefWidth="571.0" text="3" GridPane.rowIndex="4" />
+                        <Label prefHeight="27.0" prefWidth="571.0" text="4" GridPane.rowIndex="5" />
+                        <Label prefHeight="27.0" prefWidth="571.0" text="5" GridPane.rowIndex="6" />
+                        <Label prefHeight="27.0" prefWidth="571.0" text="6" GridPane.rowIndex="7" />
+                        <Label prefHeight="27.0" prefWidth="571.0" text="Saya tidak menjaga jarak 1,5 meter dengan orang lain saat berbelanja" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                        <Label prefHeight="27.0" prefWidth="571.0" text="7" GridPane.rowIndex="8" />
+                        <Label prefHeight="27.0" prefWidth="571.0" text="Saya makan di luar rumah" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                        <Label prefHeight="27.0" prefWidth="571.0" text="Saya tidak minum air hangat dan mencuci tangan denga sabun setelah tiba di rumah" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                        <Label prefHeight="27.0" prefWidth="571.0" text="Saya berada di wilayah tempat pasien korona tertular" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                        <Label prefHeight="27.0" prefWidth="571.0" text="8" GridPane.rowIndex="9" />
+                        <Label prefHeight="27.0" prefWidth="571.0" text="9" GridPane.rowIndex="10" />
+                        <Label prefHeight="27.0" prefWidth="571.0" text="10" GridPane.rowIndex="11" />
+                        <Label alignment="CENTER" prefHeight="57.0" prefWidth="33.0" style="-fx-background-color: #696969;" text="B" textFill="WHITE" GridPane.rowIndex="12">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="37.0" prefWidth="595.0" style="-fx-background-color: #696969;" text="POTENSI TERTULAR DI DALAM RUMAH" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="12">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="37.0" prefWidth="595.0" style="-fx-background-color: #696969;" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="12">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="37.0" prefWidth="595.0" style="-fx-background-color: #696969;" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="12">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="27.0" prefWidth="571.0" text="Saya tidak menggunakan handsanitizer untuk memegang gagang pintu rumah saya" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+                        <Label prefHeight="27.0" prefWidth="571.0" text="Saya tidak mencuci tangan dengan sabun setelah sampai di rumah" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+                        <Label prefHeight="27.0" prefWidth="571.0" text="Saya tidak menyediakan tissue dan antiseptik di rumah" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+                        <Label prefHeight="27.0" prefWidth="571.0" text="11" GridPane.rowIndex="13" />
+                        <Label prefHeight="27.0" prefWidth="571.0" text="12" GridPane.rowIndex="14" />
+                        <Label prefHeight="27.0" prefWidth="571.0" text="13" GridPane.rowIndex="15" />
+                        <Label prefHeight="27.0" prefWidth="571.0" text="Saya tidak segera merendam baju saat sudah tiba di rumah" GridPane.columnIndex="1" GridPane.rowIndex="16" />
+                        <Label prefHeight="27.0" prefWidth="571.0" text="Saya tidak mandi dan kermas saat tiba di rumah" GridPane.columnIndex="1" GridPane.rowIndex="17" />
+                        <Label prefHeight="27.0" prefWidth="571.0" text="Saya tida mensosialosasikan resiko terkena korona ke keluarga" GridPane.columnIndex="1" GridPane.rowIndex="18" />
+                        <Label prefHeight="27.0" prefWidth="571.0" text="14" GridPane.rowIndex="16" />
+                        <Label prefHeight="27.0" prefWidth="571.0" text="15" GridPane.rowIndex="17" />
+                        <Label prefHeight="27.0" prefWidth="571.0" text="16" GridPane.rowIndex="18" />
+                        <Label alignment="CENTER" prefHeight="57.0" prefWidth="33.0" style="-fx-background-color: #696969;" text="C" textFill="WHITE" GridPane.rowIndex="19">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="37.0" prefWidth="595.0" style="-fx-background-color: #696969;" text="DAYA TAHAN TUBUH (IMUNITAS)" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="19">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="27.0" prefWidth="571.0" text="Dalam sehari saya tidak terkena cahaya matahari selama 15 menit" GridPane.columnIndex="1" GridPane.rowIndex="20" />
+                        <Label prefHeight="27.0" prefWidth="571.0" text="Saya tidak berolahraga dalam sehari minimal 30 menit" GridPane.columnIndex="1" GridPane.rowIndex="21" />
+                        <Label prefHeight="27.0" prefWidth="571.0" text="Saya tidak minum C &amp; E, kurang tidur" GridPane.columnIndex="1" GridPane.rowIndex="22" />
+                        <Label prefHeight="27.0" prefWidth="571.0" text="Usia saya diatas 60 tahun" GridPane.columnIndex="1" GridPane.rowIndex="23" />
+                        <Label prefHeight="27.0" prefWidth="571.0" text="Saya mempunyai penyakit: jantung,daibetes,gangguan pernafasan" GridPane.columnIndex="1" GridPane.rowIndex="24" />
+                        <Label prefHeight="27.0" prefWidth="571.0" text="17" GridPane.rowIndex="20" />
+                        <Label prefHeight="27.0" prefWidth="571.0" text="18" GridPane.rowIndex="21" />
+                        <Label prefHeight="27.0" prefWidth="571.0" text="19" GridPane.rowIndex="22" />
+                        <Label prefHeight="27.0" prefWidth="571.0" text="21" GridPane.rowIndex="24" />
+                        <Label prefHeight="27.0" prefWidth="571.0" text="20" GridPane.rowIndex="23" />
+                        <RadioButton fx:id="ya" mnemonicParsing="false" text="YA" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="satu" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="ta" mnemonicParsing="false" text="TIDAK" toggleGroup="$satu" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                        <RadioButton fx:id="yb" mnemonicParsing="false" text="YA" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="dua" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="yc" mnemonicParsing="false" text="YA" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="tiga" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="yd" mnemonicParsing="false" text="YA" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="empat" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="ye" mnemonicParsing="false" text="YA" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="lima" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="yf" mnemonicParsing="false" text="YA" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="enam" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="yg" mnemonicParsing="false" text="YA" GridPane.columnIndex="2" GridPane.rowIndex="8">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="tujuh" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="yh" mnemonicParsing="false" text="YA" GridPane.columnIndex="2" GridPane.rowIndex="9">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="delapan" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="yi" mnemonicParsing="false" text="YA" GridPane.columnIndex="2" GridPane.rowIndex="10">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="sembilan" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="yj" mnemonicParsing="false" text="YA" GridPane.columnIndex="2" GridPane.rowIndex="11">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="sepuluh" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="yk" mnemonicParsing="false" text="YA" GridPane.columnIndex="2" GridPane.rowIndex="13">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="sebelas" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="yl" mnemonicParsing="false" text="YA" GridPane.columnIndex="2" GridPane.rowIndex="14">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="duabelas" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="ym" mnemonicParsing="false" text="YA" GridPane.columnIndex="2" GridPane.rowIndex="15">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="tigabelas" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="yn" mnemonicParsing="false" text="YA" GridPane.columnIndex="2" GridPane.rowIndex="16">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="empatbelas" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="yo" mnemonicParsing="false" text="YA" GridPane.columnIndex="2" GridPane.rowIndex="17">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="limabelas" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="yp" mnemonicParsing="false" text="YA" GridPane.columnIndex="2" GridPane.rowIndex="18">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="enambelas" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="yq" mnemonicParsing="false" text="YA" GridPane.columnIndex="2" GridPane.rowIndex="20">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="tujuhbelas" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="tb" mnemonicParsing="false" text="TIDAK" toggleGroup="$dua" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                        <RadioButton fx:id="tc" mnemonicParsing="false" text="TIDAK" toggleGroup="$tiga" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                        <RadioButton fx:id="td" mnemonicParsing="false" text="TIDAK" toggleGroup="$empat" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                        <RadioButton mnemonicParsing="false" text="TIDAK" toggleGroup="$lima" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                        <RadioButton mnemonicParsing="false" text="TIDAK" toggleGroup="$enam" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+                        <RadioButton mnemonicParsing="false" text="TIDAK" toggleGroup="$tujuh" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+                        <RadioButton mnemonicParsing="false" text="TIDAK" toggleGroup="$delapan" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+                        <RadioButton mnemonicParsing="false" text="TIDAK" toggleGroup="$sembilan" GridPane.columnIndex="3" GridPane.rowIndex="10" />
+                        <RadioButton mnemonicParsing="false" text="TIDAK" toggleGroup="$sepuluh" GridPane.columnIndex="3" GridPane.rowIndex="11" />
+                        <RadioButton mnemonicParsing="false" text="TIDAK" toggleGroup="$sebelas" GridPane.columnIndex="3" GridPane.rowIndex="13" />
+                        <RadioButton mnemonicParsing="false" text="TIDAK" toggleGroup="$duabelas" GridPane.columnIndex="3" GridPane.rowIndex="14" />
+                        <RadioButton mnemonicParsing="false" text="TIDAK" toggleGroup="$tigabelas" GridPane.columnIndex="3" GridPane.rowIndex="15" />
+                        <RadioButton mnemonicParsing="false" text="TIDAK" toggleGroup="$empatbelas" GridPane.columnIndex="3" GridPane.rowIndex="16" />
+                        <RadioButton mnemonicParsing="false" text="TIDAK" toggleGroup="$limabelas" GridPane.columnIndex="3" GridPane.rowIndex="17" />
+                        <RadioButton mnemonicParsing="false" text="TIDAK" toggleGroup="$enambelas" GridPane.columnIndex="3" GridPane.rowIndex="18" />
+                        <RadioButton mnemonicParsing="false" text="TIDAK" toggleGroup="$tujuhbelas" GridPane.columnIndex="3" GridPane.rowIndex="20" />
+                        <RadioButton mnemonicParsing="false" text="TIDAK" GridPane.columnIndex="3" GridPane.rowIndex="24">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="duasatu" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton mnemonicParsing="false" text="TIDAK" GridPane.columnIndex="3" GridPane.rowIndex="22">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="sembilanbelas" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton mnemonicParsing="false" text="TIDAK" GridPane.columnIndex="3" GridPane.rowIndex="23">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="duapuluh" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton mnemonicParsing="false" text="TIDAK" GridPane.columnIndex="3" GridPane.rowIndex="21">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="delapanbelas" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="yr" mnemonicParsing="false" text="YA" toggleGroup="$delapanbelas" GridPane.columnIndex="2" GridPane.rowIndex="21" />
+                        <RadioButton fx:id="ys" mnemonicParsing="false" text="YA" toggleGroup="$sembilanbelas" GridPane.columnIndex="2" GridPane.rowIndex="22" />
+                        <RadioButton fx:id="yt" mnemonicParsing="false" text="YA" toggleGroup="$duapuluh" GridPane.columnIndex="2" GridPane.rowIndex="23" />
+                        <RadioButton fx:id="yu" mnemonicParsing="false" text="YA" toggleGroup="$duasatu" GridPane.columnIndex="2" GridPane.rowIndex="24" />
+                        <Label prefHeight="37.0" prefWidth="595.0" style="-fx-background-color: #696969;" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="19">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="37.0" prefWidth="595.0" style="-fx-background-color: #696969;" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="19">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+                  <Button layoutX="550.0" layoutY="727.0" mnemonicParsing="false" onAction="#btnCek" text="CEK HASIL" />
+                  <Label fx:id="nilai" layoutX="328.0" layoutY="731.0" text="Nilai" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
